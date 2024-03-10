@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&D Virtual Store</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+    <center><header>
+      <div id="container">
+        <a href="index.html" id="logo"><img src="img/logo.png"></a>
+        <div id="mainmenu">
+          <nav>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Productos</a></li>
+            <li><a href="contactenos.html">Contactenos</a></li>
+            <li><a href="about us.html">Acerca de nosotros</a></li>
+          </nav>
+        </div>
+      </div>
+  </header></center>
+
+  <!-- PRINCIPAL -->
+<main>
+    <div class="paginaInicial">
+      <center>
+        <h1 class="nombreEmpresa">
+          B&D Virtual Store
+        </h1>
+      </center>
+    </div>
+      <div class="contenidoPrincipal">
+        <div class="parrafoPrincipal">
+          <center>
+            <p>
+              Bienvenido a B&D Virtual Store, tu destino líder para productos publicitarios. 
+              Estamos aquí para ayudarte y responder a tus preguntas. No dudes en contactarnos 
+              utilizando la información a continuación o completando el formulario de contacto.
+              <br>
+              <br>
+              Información de contacto: <br>
+              Email: comercial@gmail.com <br>
+              Teléfono: 301 6995594 <br>
+              Dirección: Carrera 98 sur # 55a-24, Bogotá <br>
+            </p>                
+          </center>
+        </div>
+        <div class="formularioContacto">
+          <h2>Contacta con nosotros</h2>
+          <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+  
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+  
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+  
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="footer-content">
+      <p>&copy; 2023 B&D Virtual Store. Todos los derechos reservados.</p>
+      <ul>
+        <li><a href="https://www.facebook.com/">Facebook<img src="img/facebook.png"></a></li>
+        <li><a href="https://www.twitter.com/">Twitter<img src="img/X.png"></a></li>
+        <li><a href="https://www.instagram.com/">Instagram<img src="img/instagram.png"></a></li>
+        <li><a href="https://www.youtube.com/">Youtube<img src="img/youtube.png"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

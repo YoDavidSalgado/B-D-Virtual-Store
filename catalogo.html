@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&D Virtual Store</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+  <!-- HEADER -->
+    <center><header>
+      <div id="container">
+        <a href="index.html" id="logo"><img src="img/logo.png"></a>
+        <div id="mainmenu">
+          <nav>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Productos</a></li>
+            <li><a href="contactenos.html">Contactenos</a></li>
+            <li><a href="about us.html">Acerca de nosotros</a></li>
+          </nav>
+        </div>
+      </div>
+  </header></center>
+
+  <!-- PRINCIPAL -->
+  <center><main> 
+
+    <div class="separacion">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="img/Mug blanco.png" alt="Imagen de ejemplo" width="100%" height="350">
+            <div class="card-body">
+                <h2>Mugs blancos</h2>
+              <p class="card-text">¡Personaliza tus mañanas con nuestras mugs blancas! Diseña con tus fotos, citas o diseños favoritos. Exprésate con estilo en cada sorbo de un desayuno personalizado!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">$12.000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="img/Gorras colores.png" alt="Imagen de ejemplo" width="100%" height="350">
+            <div class="card-body">
+                <h2>Gorras frente blanco</h2>
+                <p class="card-text"> ¡Estilo a tu medida con nuestras gorras personalizadas! Diseña tu look único y destaca en cualquier ocasión. ¡Haz una declaración de moda con nuestras gorras!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">$9.000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="img/Mug magico.png" alt="Imagen de ejemplo" width="100%" height="350">
+            <div class="card-body">
+                <h2>Mug magico</h2>
+              <p class="card-text">
+                ¡Sorprende con magia en cada sorbo! Nuestros mugs mágicos personalizados dan vida a tus diseños con el calor. ¡Haz que cada momento sea especial!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">$15.000</small>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="separacion">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="img/Camiseta bicolor.png" alt="Imagen de ejemplo" width="100%" height="350">
+            <div class="card-body">
+                <h2>Camisetas manga de color</h2>
+              <p class="card-text">¡Crea tu estilo único con nuestras camisetas personalizadas de manga corta! Elige tu color y diseña. ¡Haz que tu moda hable por ti!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">$18.000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="img/Gorras neon.png" alt="Imagen de ejemplo" width="100%" height="350">
+            <div class="card-body">
+                <h2>Gorras neon</h2>
+                <p class="card-text"> ¡Brilla con estilo! Gorras neon personalizadas para destacar en cualquier ocasión. ¡Crea tu look vibrante ahora!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">$8.000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="img/Mug magico.png" alt="Imagen de ejemplo" width="100%" height="350">
+            <div class="card-body">
+                <h2>Body de bebe</h2>
+              <p class="card-text">¡Adorables y personalizados! Descubre nuestros bodys únicos para bebés. Colores encantadores, diseños tiernos. ¡Viste a tu pequeño con estilo y amor!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">$13.000</small>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h1>Calcula tu compra!</h1>
+
+    <hr class="featurette-divider">
+
+  <div class="container">
+      <div id="operacionDigitada"></div>
+      <div id="resultado"></div>
+      <div class="fila">
+          <button class="teclas" onclick="digito('1')">1</button>
+          <button class="teclas" onclick="digito('2')">2</button>
+          <button class="teclas" onclick="digito('3')">3</button>
+          <button class="teclas" onclick="digito('+')">+</button>
+          <button class="teclas" onclick="raizCuadrada()">√</button>
+      </div>
+      <div class="fila">
+          <button class="teclas" onclick="digito('4')">4</button>
+          <button class="teclas" onclick="digito('5')">5</button>
+          <button class="teclas" onclick="digito('6')">6</button>
+          <button class="teclas" onclick="digito('-')">-</button>
+          <button class="teclas" onclick="elevarAlCuadrado()">X²</button>
+      </div>
+      <div class="fila">
+          <button class="teclas" onclick="digito('7')">7</button>
+          <button class="teclas" onclick="digito('8')">8</button>
+          <button class="teclas" onclick="digito('9')">9</button>
+          <button class="teclas" onclick="digito('*')">*</button>
+          <button class="teclas" onclick="factorial()">X!</button>
+      </div>
+      <div class="fila">
+          <button class="teclas" onclick="borrar()">AC</button>
+          <button class="teclas" onclick="digito('0')">0</button>
+          <button class="teclas" onclick="calcular()">=</button>
+          <button class="teclas" onclick="digito('/')">/</button>
+          <button class="teclas" onclick="digito('.')">.</button>
+      </div>
+  </div>
+
+</main></center>
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="footer-content">
+      <p>&copy; 2023 B&D Virtual Store. Todos los derechos reservados.</p>
+      <ul>
+        <li><a href="https://www.facebook.com/">Facebook<img src="img/facebook.png"></a></li>
+        <li><a href="https://www.twitter.com/">Twitter<img src="img/X.png"></a></li>
+        <li><a href="https://www.instagram.com/">Instagram<img src="img/instagram.png"></a></li>
+        <li><a href="https://www.youtube.com/">Youtube<img src="img/youtube.png"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
